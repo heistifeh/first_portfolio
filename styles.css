@@ -1,0 +1,612 @@
+body{
+	width: 100%;
+	margin: 0;
+}
+ .dark-row p{
+	color: rgba(255, 255, 255, 0.5);
+}
+nav{
+	display: flex;
+	justify-content:space-between;
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	/*position: fixed;*/
+	
+
+}
+.left-nav, .right-nav{
+	display: flex;
+	list-style-type: none;
+	padding-top: 20px;
+	margin: 0;
+}
+.left-nav{
+	justify-content:flex-start;
+	font-size: 9px;
+	font-style: italic;
+
+
+}
+.left-nav li:first-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	height: 45px;
+	width: 45px;
+	border: 5px solid white;
+	border-radius:50%;
+	box-sizing: border-box;
+	position: relative;
+	bottom: 7px;
+	margin-right: 5px;
+}
+.left-nav img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+
+}
+
+.left-nav li:nth-child(2){
+	color: white;
+	font-size: 10px;
+	font-style: normal;
+	position: relative;
+	bottom: 12px;
+	font-weight: bolder;
+
+}
+.right-nav{
+
+	justify-content: flex-end;
+
+}
+
+nav ul a{
+	text-decoration: none;
+	margin: 10px;
+	color: ghostwhite;
+}
+.right-nav img{
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+
+	
+	
+	
+}
+
+/*AFTER NAVIGATION STARTS HERE*/
+
+.after-nav-container{
+	display: flex;
+	margin: 0;
+	width: 100%;
+
+
+}
+.name-container, .pic-container, .others-container{
+	
+	height: 500px;
+	width: 33.5%;
+	margin: 0;
+	border: none;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+}
+.name-container{
+	padding-top: 100px;
+	display: flex;
+	justify-content: flex-end;
+	background-color: #A21E1A;
+	color: white;
+
+}
+.name-container div{
+	padding-right: 15px;
+}
+.pic-container{
+	width: 33%;
+
+
+}
+.pic-container img{
+	width: 100%;
+	height: 100%;
+
+}
+.others-container{
+	background-color: orange;
+}
+div .top, .bottom{
+	height: 50%;
+	box-sizing: border-box;
+}
+.top{
+	background-position: center;
+	background-size: 100% 250px;
+	background-repeat: no-repeat;
+	background-image: url("./images/portfolio-img-14.jpg");
+}
+.bottom{
+	color: rgba(0, 0, 0, 0.6);
+	padding: 30px 30px 60px 30px;
+	background-color: #F2F2F2;
+	box-sizing: border-box;
+}
+.about-container{
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid whitesmoke;
+}
+.about-me{
+	width: 35%;
+
+}
+.more-about-me p, .edu-stuff p{
+	color: rgba(0, 0, 0, 0.6);
+
+}
+.more-about-me{
+	
+	width: 65%;
+}
+.elementor{
+	width: 100%;
+	height: 70px;
+	background-color: #F2F2F2;
+	margin: auto;
+
+	
+
+	
+}
+.elementor-container{
+	display: flex;
+	justify-content: space-between;
+
+}
+.elementor button{
+	width: 140px;
+	height: 30px;
+	
+	background-color: #EE4532;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px;
+	border: none;
+}
+.elementor a{
+	color: white;
+	text-decoration: none;
+
+}
+.mini-image, .profile-image{
+	display: flex;
+	justify-content: center;
+	height: 90px;
+	width: 90px;
+	border: 10px solid white;
+	border-radius: 90px;
+	
+	position: relative;
+	bottom: 15px;
+}
+.mini-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.workspace{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	height: 600px;
+	margin-top: 50px;
+	background-image: linear-gradient(to top, rgba(0, 47, 75, 0.8), rgba(0, 91, 127, 0.6) 50%, rgba(0, 139, 202, 0.1) 100%), url("images/workspace.webp");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.workspace-heading{
+	text-align: center;
+	color: white;
+	margin: 0;
+}
+.workspace-heading p{
+	font-style: italic;
+}
+/*.workspace-goals > div{
+	flex: 1;
+}*/
+.workspace-goals{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 180px;
+	/*padding: 15px;*/
+	color: white;
+
+	background-image: linear-gradient(to top, rgba(0, 47, 75, 0.8), rgba(0, 91, 127, 1) 50%, rgba(0, 139, 202, 0) 100%);
+	box-sizing: border-box;
+}
+.workspace-goals > div {
+	flex: 1;
+	padding: 20px;
+}
+.workspace-goals div:nth-child(3), .workspace-goals div:first-child{
+	background-color: rgba(0, 47, 75, 0.2) ;
+}
+.workspace-goals div:nth-child(2), .workspace-goals div:last-child{
+	background-color: rgba(0, 47, 75, 0.8) ;
+}
+.workspace-goals p, .skill p{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/*MY SKILLS STARTS HERE*/
+.my-skills{
+	background-color: #0028A2;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+
+}
+.my-skills >div{
+	flex: ;
+	padding: 10px;
+	width: 100%;
+	margin: 10px;
+	height: 200px;
+
+}
+.web-design-container{
+	width: 100%;
+	background-color: #2649B1;
+	margin-top: 10px;
+	height: 15px;
+
+	
+}
+.web-design, .logo-design, .print-design, .graph-design{
+	display: flex;
+	justify-content: space-between;
+	font-size: 9px;
+	padding: 0;
+	margin: 0;
+	height: 15px;
+	background-color: #017CC9;
+}
+.web-design{
+	width: 80%;
+}
+.print-design{
+	width: 75%;
+}
+.logo-design{
+	width: 70%;
+}
+.graph-design{
+	width: 90%;
+}
+.my-skills p{
+	padding: 3px;
+	margin: 0;
+}
+.what-i-do-header{
+	text-align: center;
+	margin: 100px 0 100px 0;
+
+
+}
+.what-i-do-container-top, .what-i-do-container-bottom{
+	display: flex;
+	width: 100%;
+}
+.what-i-do-container-top img, .what-i-do-container-bottom img{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+
+}
+.what-i-do-container-top div, .what-i-do-container-bottom div{
+	padding: 15px;
+	height: 250px;
+	box-sizing: border-box;
+}
+
+
+.ui-design, .web-development, .app-development, .type-design, .blog-writing, .project-management{
+	text-align: center;
+}
+.what-i-do-container-top div:nth-child(odd){
+	background-color: rgba(0, 0, 0, 0.05);
+}
+.what-i-do-container-bottom div:nth-child(even){
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-container{
+	width: 100%;
+	background-color: #801038;
+	text-align: center;
+	padding-top: 50px;
+	color: white;
+
+}
+.portfolio-container ul{
+	list-style-type: none;
+	display: flex;
+	margin: auto;
+}
+.portfolio-container ul a{
+	padding: 10px;
+	
+}
+.portfolio-nav{
+	display: flex;
+	margin: 30px;
+	justify-content: space-evenly;
+}
+
+.portfolio-nav ul a{
+	text-decoration: none;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.4);
+}
+.portfolio-nav li:first-child{
+	border: 0.1px solid white;
+
+}
+.portfolio-nav li:first-child a{
+	color: white;
+
+}
+
+/*.portfolio-header{
+	display: flex;
+	justify-content: flex-end;
+	}*/
+.portfolio-top, .portfolio-bottom{
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+	width: 100%;
+}
+.portfolio-bottom{
+	flex-direction: row-reverse;
+}
+.portfolio-top div, .portfolio-bottom div{
+	width: 25%;
+	
+}
+.portfolio-top img, .portfolio-bottom img{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+
+}
+.portfolio-bottom{
+	margin: 10px 0 60px 0;
+}
+
+.education{
+	display: flex;
+	justify-content: space-between;
+}
+.edu-stuff{
+	margin: 30px;
+	padding-bottom: 30px;
+
+}
+.edu-stuff>h3::after{
+	content: " PRESENT";
+	color: red;
+	font-size: 14px;
+}
+
+.dark-row{
+	width: 100%;
+	height: 170px;
+	margin: 0;
+	background-color: black;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 420px;
+}
+.dark-row > div{
+	color: white;
+	margin: auto;
+
+
+
+}
+.dark-row button{
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+}
+.whitesmoke-row{
+	height: 70px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*TESTIMONIAL STARTS HERE
+.
+.
+.
+*/
+.testimonial-words{
+	text-align: center;
+	margin-top: 70px;
+}
+.testimonial-profile{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+.testimonial img{
+	
+	object-fit: cover;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.profile-title p, .profile-title h3,.contact h2, .contact p{
+	margin: 0;
+}
+.dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	margin: 20px;
+}
+.dots div{
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.dots div:nth-child(2){
+	background-color: black;
+	border-color: black;
+}
+
+footer{
+	margin-top:90px ;
+	border-top: 1px solid whitesmoke;
+
+}
+.sponsor{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.sponsor img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.contact img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	
+@media screen and (max-width: 768px){
+	body{
+		width: 100%;
+	}
+	nav{
+		width: 100%;
+	}
+	.name-container, .pic-container, .others-container{
+	
+	height: 500px;
+	width: 33.5%;
+	margin: 0;
+	border: none;
+	box-sizing: border-box;
+	overflow: hidden;
+	
+}
+.name-container{
+	padding-top: 100px;
+	display: flex;
+	justify-content: flex-end;
+	background-color: #A21E1A;
+	color: white;
+
+}
+.name-container div{
+	padding-right: 15px;
+}
+.pic-container{
+	width: 33%;
+
+
+}
+.pic-container img{
+	width: 100%;
+	height: 100%;
+
+}
+.others-container{
+	background-color: orange;
+}
+
+}
+@media screen and (max-width: 375px) {
+	body{
+		background-color: black;
+		width: 100%;
+	}
+	.workspace-goals{
+		display: flex;
+		flex-direction: column;
+	}
+}
+    /*nav {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-nav, .right-nav {
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .left-nav li, .right-nav li {
+        margin: 5px 0;
+    }
+
+    .left-nav li p, .workspace-heading h1, .about-me h1, .strategy h2, .design h2, .development h2, .quality h2, .testimonial-words p, .profile-title h3, .contact h2 {
+        font-size: larger;
+    }
+    .after-nav-container, .about-container, .elementor-container, .my-skills > div, .what-i-do-container-top, .what-i-do-container-bottom, .portfolio-top, .portfolio-bottom, .education {
+        flex-direction: column;
+    }
+    .name-container, .pic-container, .others-container, .about-me, .more-about-me, .workspace-goals > div, .edu-stuff, .testimonial-profile, .sponsor {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .elementor button, .dark-row button {
+        width: auto;
+        padding: 15px;
+    }
+    .web-design, .print-design, .logo-design, .graph-design {
+        width: auto;
+        margin: 5px 0;
+    }
+    .sponsor {
+        flex-direction: column;
+    }
+    .sponsor img {
+        margin-bottom: 10px;
+    }
+    .name-container{
+    	display: flex;
+    	justify-content: flex-end;
+    	background-color: yellow;
+    	padding: 0;
+    }*/
